@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "GradeChecker",
+  "description": "Check your Carleton grades automatically.",
+  "version": "0.1",
+
+  "icons": {  },
+  
+  "content_scripts": [
+    {
+      "matches": [ "https://central.carleton.ca/prod/twbkwbis.P_WWWLogin" ],
+      "js": [ "jquery.js", "gradechecker.js" ],
+	    "run_at": "document_start"
+    }
+  ]
+}
